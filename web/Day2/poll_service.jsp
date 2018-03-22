@@ -18,7 +18,7 @@
 <body>
 <%! //이렇게 하면 누적됨
     int[] votes = null;
-    int sum = 0;
+    int sum;
 
     public void jspInit() { //life cycle
         votes = new int[5];
@@ -52,14 +52,17 @@
             break;
     }
 
-    sum = votes[0] + votes[1] + votes[3] + votes[4];
+    sum = votes[0]+votes[1]+votes[3]+votes[4];
 
-    int[] r = new int[5];
+
+    String[] r = {"","","","",""};
 
     for (int i = 0; i <5; i++) {
-        if (votes[i] != 0) {
-            r[i] = votes[i] / sum * 100;
-        }
+            float f = 0;
+            if (votes[i]!=0) {
+                f = (votes[i]/(float)sum)*100;
+                r[i]=String.format("%.2f",f);
+            }
     }
 
 %>
