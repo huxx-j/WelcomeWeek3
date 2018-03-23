@@ -19,7 +19,7 @@
 <body>
 <%
     List<Student> list = new ArrayList<>();
-    String path = application.getRealPath("WEB-INF/file/Abc1115.txt");
+    String path = application.getRealPath("WEB-INF/file/Abc1115.txt"); //서버상에서 사용하는 주소가 일반적으로 사용하는 주소와 달라 꼭 물어봐야함
     File file = new File(path);
     Reader reader = new FileReader(file);
     BufferedReader bufferedReader = new BufferedReader(reader);
