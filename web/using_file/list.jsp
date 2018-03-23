@@ -1,19 +1,17 @@
-<%@ page import="java.util.List" %>
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="kr.co.bit.day3.Student" %><%--
+<%@ page import="Ex.Student" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: Huxx_j
-  Date: 2018. 3. 23.
-  Time: PM 4:28
+  Date: 2018. 3. 24.
+  Time: AM 12:34
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>list</title>
+    <title>Title</title>
 </head>
 <body>
-<!-- 파일리스트를 표 형식으로 출력 -->
 <%
     List<Student> list = (List)session.getAttribute("list");
 
@@ -32,7 +30,7 @@
         <td>성취도</td>
         <td>지역<br>코드</td>
     </tr>
-    <%
+        <%
         for (int i = 0; i < 100; i++) {
     %>
     <tr>
@@ -48,9 +46,8 @@
         <td><%=list.get(i).getAchiv()%></td>
         <td><%=list.get(i).getAreacode()%></td>
     </tr>
-    <%
+        <%
         }
     %>
-</table>
 </body>
 </html>

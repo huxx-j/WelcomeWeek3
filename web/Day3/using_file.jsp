@@ -13,27 +13,27 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<html>Å
 <head>
     <title>using_file</title>
 </head>
 <body>
 <%
-    ArrayList<Student> list = new ArrayList<>();
-    String path = application.getRealPath("WEB-INF/file/Abc1115.txt"); //서버상에서 사용하는 주소가 일반적으로 사용하는 주소와 달라 꼭 물어봐야함
+    List<Student> list = new ArrayList<>();
+    String path = application.getRealPath("WEB-INF/file/Abc1115.txt"); //서버상에서 사용하는 주소가 일반적으로 사용하는 주소와 달라 써줘야함
     File file = new File(path);
     Reader reader = new FileReader(file);
     BufferedReader bufferedReader = new BufferedReader(reader);
 
     for (int i = 0; i < 100; i++) {
         String str = bufferedReader.readLine();
-        Student student = new Student(str.substring(0, 6), str.substring(6, 10), str.substring(11, 13),
-                str.substring(14, 16), str.substring(17, 19), str.substring(20, 22), str.substring(23, 25),
+        Student student = new Student(str.substring(0, 6), str.substring(6, 10), str.substring(10, 13),
+                str.substring(13, 16), str.substring(16, 19), str.substring(19, 22), str.substring(22, 25),
                 str.substring(25, 28), str.substring(28,29), str.substring(29,30), str.substring(30,31));
         list.add(student);
 
     }
-    session.setAttribute("student", list);
+    session.setAttribute("list", list);
     response.sendRedirect("list.jsp");
 %>
 
