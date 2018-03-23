@@ -12,7 +12,7 @@
 </head>
 <body>
 <!-- 아이돌 투표 -->
-<form action="poll_service.jsp" method="post">
+<form action="../Day2/poll_service.jsp" method="post">
     <input type="radio" name="p" value="0"> 빅뱅
     <input type="radio" name="p" value="1"> 레드벨벳
     <input type="radio" name="p" value="2"> 느와르

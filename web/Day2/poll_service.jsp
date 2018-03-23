@@ -69,13 +69,15 @@
 
 <table>
     <tr><td>Q1. </td><td>아이돌 그룹 득표수</td><td><%=sum%></td><td>득표율</td></tr>
-    <tr><td>1.</td><td>빅뱅</td><td><%=votes[0]%></td><td class="per"><%=r[0]%></td></tr>
-    <tr><td>2.</td><td>레드벨벳</td><td><%=votes[1]%></td><td class="per"><%=r[1]%></td></tr>
-    <tr><td>3.</td><td>느와르</td><td><%=votes[2]%></td><td class="per"><%=r[2]%></td></tr>
-    <tr><td>4.</td><td>BTS</td><td><%=votes[3]%></td><td class="per"><%=r[3]%></td></tr>
-    <tr><td>5.</td><td>워너원</td><td><%=votes[4]%></td><td class="per"><%=r[4]%></td></tr>
+    <tr><td>1.</td><td>빅뱅</td><td><%=votes[0]%></td><td class="per"><%=r[0]%>%</td></tr>
+    <tr><td>2.</td><td>레드벨벳</td><td><%=votes[1]%></td><td class="per"><%=r[1]%>%</td></tr>
+    <tr><td>3.</td><td>느와르</td><td><%=votes[2]%></td><td class="per"><%=r[2]%>%</td></tr>
+    <tr><td>4.</td><td>BTS</td><td><%=votes[3]%></td><td class="per"><%=r[3]%>%</td></tr>
+    <tr><td>5.</td><td>워너원</td><td><%=votes[4]%></td><td class="per"><%=r[4]%>%</td></tr>
 
 </table>
+
+<a href="../Day3/logout.jsp">로그아웃</a>
 
 </body>
 </html>
