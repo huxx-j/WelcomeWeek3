@@ -1,4 +1,5 @@
-<%@ page import="kr.co.bit.day3.MemberVO" %><%--
+<%@ page import="kr.co.bit.day3.MemberVO" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: Huxx_j
   Date: 2018. 3. 23.
@@ -17,9 +18,12 @@
     String pw = request.getParameter("pw");
     String name = request.getParameter("fullname");
     MemberVO vo = new MemberVO(id,pw,name);
-    session.setAttribute("member",vo);
+//    session.setAttribute("member",vo);
 //    out.print(String.format("%s %s %s", id,pw,name));
     response.sendRedirect("intro.jsp");
+
+
+
 %>
 
 </body>
